@@ -40,6 +40,12 @@ jobs:
       - name: Build
         run: pnpm build
 
+      - name: Verify production bundle
+        run: |
+          grep -q '/assets/index-.*\.js' dist/index.html
+          test ! -e dist/src/main.js
+          grep -q '/assets/index-.*\.js' index.html
+
       - name: Setup Pages
         uses: actions/configure-pages@v5
 

@@ -7,8 +7,8 @@
   "version": "4.1.4",
   "type": "module",
   "scripts": {
-    "dev": "vite --host",
-    "build": "vite build",
+    "dev": "cp index.template.html index.html && vite --host",
+    "build": "cp index.template.html index.html && vite build && cp dist/index.html index.html && mkdir -p assets images font && cp -R dist/assets/. assets/ && cp -R public/images/. images/ && cp -R public/font/. font/",
     "preview": "vite preview",
     "format": "prettier --write src/",
     "lint": "eslint . --ext .js,.jsx,.cjs,.mjs,.ts,.tsx,.cts,.mts,.vue --fix"

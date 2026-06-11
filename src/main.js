@@ -14,9 +14,13 @@ pinia.use(piniaPluginPersistedstate);
 app.use(pinia);
 app.mount("#app");
 
-// PWA
-navigator.serviceWorker.addEventListener("controllerchange", () => {
-  // 弹出更新提醒
-  console.log("站点已更新，刷新后生效");
-  ElMessage("站点已更新，刷新后生效");
-});
+// Remove older PWA caches so every browser receives the latest deployment.
+if ("serviceWorker" in navigator) {
+  navigator.serviceWorker.getRegistrations().then((registrations) => {
+    registrations.forEach((registration) => registration.unregister());
+  });
+}
+
+if ("caches" in window) {
+  caches.keys().then((keys) => keys.forEach((key) => caches.delete(key)));
+}
