@@ -4,5 +4,11 @@
     "icon": "/images/icon/github.png",
     "tip": "在 GitHub 查看我的项目",
     "url": "https://github.com/li529384084-design"
+  },
+  {
+    "name": "Telegram",
+    "icon": "/images/icon/telegram.png",
+    "tip": "在 Telegram 联系我",
+    "url": "https://t.me/dazhao668"
   }
 ]
