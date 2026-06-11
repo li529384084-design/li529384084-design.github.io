@@ -4,7 +4,7 @@
     <nav class="nav">
       <a class="brand" href="#top"><span class="brand-mark">J</span><span>Jacklin</span></a>
       <div class="nav-links">
-        <a href="#story">故事</a><a href="#safety">避雷</a><a href="#resources">资源</a>
+        <a href="#tech">技术</a><a href="#story">故事</a><a href="#resources">资源</a><a href="#community">留言</a>
         <a class="nav-contact" href="https://t.me/dazhao668" target="_blank" rel="noreferrer">联系我</a>
       </div>
     </nav>
@@ -31,6 +31,8 @@
         <article class="feature-card dark-card"><div class="sparkles">✦　·　✧</div><div><span class="card-label">保持联系</span><h3>@dazhao668</h3><a href="https://t.me/dazhao668" target="_blank" rel="noreferrer">在 Telegram 联系我 ↗</a></div></article>
       </div>
     </section>
+
+    <TechStudio />
 
     <section id="story" class="section story-section">
       <div class="section-heading"><span>STORY</span><h2>把人生活成一篇励志文</h2><p>关于自律、逃避，以及一个写得比做得漂亮的人。</p></div>
@@ -63,6 +65,8 @@
       </div>
       <div v-if="filteredResources.length === 0" class="empty-state">没有找到匹配的资源，换个关键词试试。</div>
     </section>
+
+    <CommunityBoard />
 
     <footer class="footer">
       <a class="brand" href="#top"><span class="brand-mark">J</span><span>Jacklin</span></a><p>© {{ year }} Jacklin. Keep curious, keep creating.</p>
