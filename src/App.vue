@@ -1,5 +1,6 @@
 <template>
   <main class="site-shell">
+    <MeteorCursor />
     <div class="mesh mesh-one" /><div class="mesh mesh-two" /><div class="mesh mesh-three" />
     <nav class="nav">
       <a class="brand" href="#top"><span class="brand-mark">J</span><span>Jacklin</span></a>
