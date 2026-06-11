@@ -1,0 +1,27 @@
+[
+  {
+    "icon": "Blog",
+    "name": "我的文章",
+    "link": "https://li529384084-design.github.io/"
+  },
+  {
+    "icon": "LaptopCode",
+    "name": "GitHub",
+    "link": "https://github.com/li529384084-design"
+  },
+  {
+    "icon": "Book",
+    "name": "Vue 文档",
+    "link": "https://cn.vuejs.org/"
+  },
+  {
+    "icon": "Compass",
+    "name": "Vite 文档",
+    "link": "https://cn.vitejs.dev/"
+  },
+  {
+    "icon": "Fire",
+    "name": "项目原址",
+    "link": "https://github.com/imsyy/home"
+  }
+]
